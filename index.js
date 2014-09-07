@@ -1,29 +1,14 @@
 'use strict';
 
-var path = require('path');
+var hasWarned = false;
 
 module.exports = {
-  name: 'Ember CLI Ember Data',
-
-  blueprintsPath: function() {
-    return path.join(__dirname, 'blueprints');
-  },
-
-  included: function included(app) {
-    this._super.included(app);
-
-    var options = {
-      exports: {
-        'ember-data': [
-          'default'
-        ]
-      }
-    };
-
-    if (this.app.env === 'production') {
-      app.import(app.bowerDirectory +'/ember-data/ember-data.prod.js', options);
-    } else {
-      app.import(app.bowerDirectory + '/ember-data/ember-data.js', options);
+  name: 'ember-cli-ember-data',
+  init: function() {
+    if (!hasWarned) {
+      var deprecate = this.project.require('ember-cli/lib/utilities/deprecate');
+      deprecate(this.name + ' is deprecated. ember-data itself can now be used as an add-on. Please update your package.json accordingly.', true);
+      hasWarned = true;
     }
   }
 };

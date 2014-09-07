@@ -1,3 +1,5 @@
+**THIS PROJECT IS DEPRECATED: [ember-data](https://github.com/emberjs/data) now has add-on support natively. Please update your package.json accordingly.**
+
 ## ember-cli-ember-data
 
 This addon that adds `ember-data` to the generated Ember CLI output (in `vendor.js`).
@@ -7,8 +9,8 @@ This addon that adds `ember-data` to the generated Ember CLI output (in `vendor.
 From within your Ember CLI application (must be > 0.0.42), run the following:
 
 ```bash
-npm install --save-dev ember-cli-ember-data
-ember generate ember-cli-ember-data
+$ npm install --save-dev ember-cli-ember-data
+$ ember generate ember-cli-ember-data
 ```
 
 ### Upgrading `ember-data`

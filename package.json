@@ -1,7 +1,8 @@
 {
   "name": "ember-cli-ember-data",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Include Ember Data into an ember-cli application.",
+  "description": "DEPRECATED: ember-data now has native support as an ember add-on",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/twokul/ember-cli-ember-data/issues"
   },
-  "homepage": "https://github.com/twokul/ember-cli-ember-data"
+  "homepage": "https://github.com/twokul/ember-cli-ember-data",
+  "dependencies": {
+    "ember-data": "1.0.0-beta.10"
+  }
 }
